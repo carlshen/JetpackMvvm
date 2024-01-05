@@ -18,6 +18,7 @@
         <activity
             android:name=".ui.activity.WelcomeActivity"
             android:screenOrientation="portrait"
+            android:exported="true"
             android:theme="@style/FullscreenThemse">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,19 +28,23 @@
         <activity
             android:name=".ui.activity.MainActivity"
             android:launchMode="singleTask"
+            android:exported="false"
             android:windowSoftInputMode="adjustResize"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.ErrorActivity"
             android:label="错误界面"
+            android:exported="false"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.TestActivity"
             android:launchMode="singleTask"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:exported="false"
             android:configChanges="keyboardHidden|orientation|screenSize|locale"
             android:theme="@android:style/Theme.Translucent" />
 
